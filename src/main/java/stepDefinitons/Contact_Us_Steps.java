@@ -25,6 +25,7 @@ public class Contact_Us_Steps {
         System.setProperty("web-driver.chrome.driver", System.getProperty("use.dir") + "/src/main/java/drivers/chromedriver");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+        chromeOptions.addArguments("--headless");
         driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
     }
