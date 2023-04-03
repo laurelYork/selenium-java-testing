@@ -37,25 +37,26 @@ public class Contact_Us_Steps {
 
     }
 
-    @Given("I access the webdriver university contact us page")
+    @Given("I access the web driver university contact us page")
     public void i_access_the_webdriver_university_contact_us_page() throws InterruptedException {
         driver.get("https://webdriveruniversity.com/Contact-Us/contactus.html");
         Thread.sleep(3000);
     }
     @When("I enter a first name")
     public void i_enter_a_first_name() throws InterruptedException {
-        driver.findElement(By.cssSelector("[name=\"first_name\"]")).sendKeys("Joe");
+        driver.findElement(By.cssSelector("[name=\"first_name\"]")).sendKeys("John");
         Thread.sleep(3000);
 
     }
     @And("I enter a last name")
     public void i_enter_a_last_name() throws InterruptedException {
-        driver.findElement(By.cssSelector("[name=\"last_name\"]")).sendKeys("Blogs");
+        driver.findElement(By.cssSelector("[name=\"last_name\"]")).sendKeys("Doe");
         Thread.sleep(3000);
     }
+
     @And("I enter an email address")
     public void i_enter_an_email_address() {
-        driver.findElement(By.name("email")).sendKeys("aurel900104@gmail.com");
+        driver.findElement(By.name("email")).sendKeys("test@gmail.com");
     }
     @And("I enter a comment")
     public void i_enter_a_comment()  {
